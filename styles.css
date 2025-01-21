@@ -1,3 +1,4 @@
+/* General body and container styles */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #eeececf9;
@@ -6,7 +7,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   margin: 50px auto;
   background: #fff;
@@ -15,11 +16,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header styles */
 h1 {
   text-align: center;
   color: #333;
+  font-size: 1.5em; /* Reduce font size for smaller screens */
+  margin-bottom: 20px;
 }
 
+/* Form group styles */
 .form-group {
   margin-bottom: 15px;
 }
@@ -31,14 +36,15 @@ label {
 }
 
 input {
-  width: 95%;
+  width: 96%; /* Make inputs take the full width */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+/* Button styles */
 button {
-  width: 100%;
+  width: 100%; /* Make button take the full width */
   padding: 10px;
   background-color: #4caf50;
   color: white;
@@ -52,6 +58,7 @@ button:hover {
   background-color: #45a059;
 }
 
+/* Error message styles */
 .error-message {
   color: red;
   font-size: 0.9em;
@@ -59,6 +66,7 @@ button:hover {
   display: none;
 }
 
+/* Success message styles */
 .success-message {
   color: green;
   font-size: 1em;
@@ -67,6 +75,7 @@ button:hover {
   display: none;
 }
 
+/* Responsive design: Adapt for smaller screens */
 @media (max-width: 600px) {
   .container {
     width: 95%;
@@ -74,16 +83,16 @@ button:hover {
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Slightly smaller text */
     margin-bottom: 15px;
   }
 
   input {
-    padding: 8px;
+    padding: 8px; /* Slightly smaller input fields */
   }
 
   button {
-    padding: 12px;
+    padding: 12px; /* Slightly larger button for touch screens */
     font-size: 14px;
   }
 }
